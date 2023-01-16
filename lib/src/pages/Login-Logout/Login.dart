@@ -31,6 +31,7 @@ class _LoginNewState extends State<LoginNew> {
         behavior: SnackBarBehavior.floating,
         backgroundColor: Colors.transparent,
         content: AwesomeSnackbarContent(
+          title: 'Error',
           message:
               'The password is invalid or the user does not have a password.',
           contentType: ContentType.warning,

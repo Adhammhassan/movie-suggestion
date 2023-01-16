@@ -52,6 +52,7 @@ class _RegisterNewState extends State<RegisterNew> {
         behavior: SnackBarBehavior.floating,
         backgroundColor: Colors.transparent,
         content: AwesomeSnackbarContent(
+          title: 'Error',
           message: 'Sorry this email already exist',
           contentType: ContentType.warning,
         ),

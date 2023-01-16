@@ -85,7 +85,7 @@ class _settings_screenState extends State<settings_screen> {
           (isadmin == true)
               ? SettingsGroup(title: "Admin", children: <Widget>[
                   SimpleSettingsTile(
-                    colorxz: Theme.of(context).listTileTheme.tileColor,
+                    // colorxz: Theme.of(context).listTileTheme.tileColor,
                     title: "Admin Panel",
                     subtitle: "",
                     leading: Iconwidget(
@@ -116,7 +116,7 @@ class _settings_screenState extends State<settings_screen> {
   }
 
   Widget reportmeth() => SimpleSettingsTile(
-        colorxz: Theme.of(context).listTileTheme.tileColor,
+        //colorxz: Theme.of(context).listTileTheme.tileColor,
         title: "Report A Bug",
         subtitle: "",
         onTap: () {
@@ -127,7 +127,7 @@ class _settings_screenState extends State<settings_screen> {
             icon: Icons.bug_report, color: Color.fromARGB(255, 57, 138, 99)),
       );
   Widget feedbackmeth() => SimpleSettingsTile(
-        colorxz: Theme.of(context).listTileTheme.tileColor,
+        //colorxz: Theme.of(context).listTileTheme.tileColor,
         title: "Send Feedback",
         subtitle: "",
         leading: Iconwidget(icon: Icons.thumb_up, color: Colors.purple),
@@ -137,6 +137,7 @@ class _settings_screenState extends State<settings_screen> {
             behavior: SnackBarBehavior.floating,
             backgroundColor: Colors.transparent,
             content: AwesomeSnackbarContent(
+              title: 'Error',
               message:
                   'Thank you for youy feedback your feedback helps make our app better for everyone',
               contentType: ContentType.success,
@@ -148,7 +149,7 @@ class _settings_screenState extends State<settings_screen> {
         },
       );
   Widget Logoutmeth() => SimpleSettingsTile(
-        colorxz: Theme.of(context).listTileTheme.tileColor,
+        //colorxz: Theme.of(context).listTileTheme.tileColor,
         title: "LogOut",
         subtitle: "",
         leading: Iconwidget(icon: Icons.logout, color: Colors.blue),
@@ -157,7 +158,7 @@ class _settings_screenState extends State<settings_screen> {
         },
       );
   Widget Deletemeth() => SimpleSettingsTile(
-        colorxz: Theme.of(context).listTileTheme.tileColor,
+        //colorxz: Theme.of(context).listTileTheme.tileColor,
         title: "DELETE ACCOUNT",
         titleTextStyle: TextStyle(
             color: Colors.red, fontSize: 20, fontWeight: FontWeight.bold),
@@ -170,6 +171,7 @@ class _settings_screenState extends State<settings_screen> {
               behavior: SnackBarBehavior.floating,
               backgroundColor: Colors.transparent,
               content: AwesomeSnackbarContent(
+                title: 'Error',
                 message: 'Error please log in again and try again',
                 contentType: ContentType.failure,
               ),
@@ -182,7 +184,7 @@ class _settings_screenState extends State<settings_screen> {
         },
       );
   Widget admin_panel() => SimpleSettingsTile(
-        colorxz: Theme.of(context).listTileTheme.tileColor,
+        //colorxz: Theme.of(context).listTileTheme.tileColor,
         title: "Admin Panel",
         subtitle: "",
         leading:

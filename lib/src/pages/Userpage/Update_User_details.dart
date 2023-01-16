@@ -111,6 +111,7 @@ class _User_update_info_pageState extends State<User_update_info_page> {
                                 behavior: SnackBarBehavior.floating,
                                 backgroundColor: Colors.transparent,
                                 content: AwesomeSnackbarContent(
+                                  title: 'Error',
                                   message:
                                       'The User data has been updated successfully',
                                   contentType: ContentType.success,
