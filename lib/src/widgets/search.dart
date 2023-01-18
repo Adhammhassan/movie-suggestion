@@ -6,6 +6,7 @@ import '../models/movie_model.dart';
 
 class Search extends SearchDelegate<Model> {
   @override
+  // x button to clear words in search
   List<Widget>? buildActions(BuildContext context) {
     return [
       IconButton(
